@@ -1,0 +1,33 @@
+file_list=ls;
+file_list=file_list(3:end,:);
+
+base1='Data_Case1_obj_';
+base2='Data_Case1_sol_';
+base3='Data_Case2_obj_';
+base4='Data_Case2_sol_';
+% nreps=40;
+% 
+% counter=0;
+% for rep=0:nreps-1;
+%     for line=1:size(file_list,1)
+%         if strncmp(file_list(line,:),base1,length(base1))==1
+%             if strncmp(file_list(line,:),[base1 num2str(counter)],length([base1 num2str(counter)]))==1
+%                 movefile([cd '\' strtrim(file_list(line,:))], [cd '\Data_renamed\' strtrim(file_list(line,:))])
+%                 counter=counter+1;
+%             elseif str2double(file_list(line,(find(file_list=='_',1,'last')+1):(find(file_list=='.')-1)))>counter
+%                 counter=counter+1;
+%                 movefile([cd '\' strtrim(file_list(line,:))], [cd '\Data_renamed\' file_list(line,1:(find(file_list=='_',1,'last'))) num2str(counter) '.txt'])
+%             elseif exist([cd '\Data_renamed\' base1 num2str(counter) '.txt'])>0
+%                 counter=counter+1;
+%             end   
+%         else; continue; end
+%     end
+% end
+tags=[];
+for ln=1:40
+%     if contains(tags,[repmat(' ',1,4-length(char(file_list(ln,(find(file_list(ln,:)=='_',1,'last')+1):(find(file_list(ln,:)=='.')-1))))) ...
+%             file_list(ln,(find(file_list(ln,:)=='_',1,'last')+1):(find(file_list(ln,:)=='.')-1))])~=1
+       tags=[tags; [repmat(' ',1,4-length(char(file_list(ln,(find(file_list(ln,:)=='_',1,'last')+1):(find(file_list(ln,:)=='.')-1))))) ...
+           file_list(ln,(find(file_list(ln,:)=='_',1,'last')+1):(find(file_list(ln,:)=='.')-1))]];
+%     end
+end
