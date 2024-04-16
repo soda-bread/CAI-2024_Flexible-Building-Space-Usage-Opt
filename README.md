@@ -1,5 +1,5 @@
 ### Files
-1. Dataset
+Dataset
 Office room dataset, meeting room dataset and raw dataset
 
 2. EAF-files
