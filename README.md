@@ -1,8 +1,8 @@
 ### Files
 Dataset  
-Office room dataset, meeting room dataset and raw dataset
-
-2. EAF-files
+Office room dataset, meeting room dataset and raw dataset  
+  
+EAF-files
 Statistic test of NSGA-II results
 
 3. ML model
