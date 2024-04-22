@@ -20,3 +20,6 @@ Well-trained ML model for meeting room
 
 · xgboost_office  
 Well-trained ML model for office room  
+
+· Supplementary Material for Multi-Objective Optimization for Flexible Building Space Usage  
+Supplementary Material (same as the title here).
